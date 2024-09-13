@@ -36,7 +36,7 @@ Hit the API
 ```
 GET http://localhost:8000/collectors/{tube-id}/procedure-info
 GET http://localhost:8000/procedures/{procedure-id}/collection-info
-POST http://localhost:8000/procedures/{procedure-id}/collection-info
+PATCH http://localhost:8000/procedures/{procedure-id}/collection-info
 ```
 
 
