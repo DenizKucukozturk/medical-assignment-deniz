@@ -1,6 +1,6 @@
-# Vitestro REST API
+# REST API
 
-Vitestro venipuncture device REST API written in Python using FastAPI
+Medical device REST API written in Python using FastAPI
 
 ## Getting started
 
@@ -52,8 +52,8 @@ a new version of the app is deployed, GitHub Actions would run the tests and not
 
 ### Next steps
 
--  I would enhance the mock implementation of the LIS by developing it as a separate backend service. This service would include a database to simulate resources such as patients, collections, and procedures, with dedicated endpoints for Vitestro’s venipuncture device to interact with.
-- Authentication is a crucial aspect of any API design. I would implement a token-based authentication system between Vitestro Cloud and Vitestro’s venipuncture device, likely using JWT with client_id and client_secret fields. A similar system would be applied between the improved LIS and the venipuncture device.
+-  I would enhance the mock implementation of the LIS by developing it as a separate backend service. This service would include a database to simulate resources such as patients, collections, and procedures, with dedicated endpoints for medical device to interact with.
+- Authentication is a crucial aspect of any API design. I would implement a token-based authentication system between Cloud and medical device, likely using JWT with client_id and client_secret fields. A similar system would be applied between the improved LIS and the venipuncture device.
 - I would containerize all backend services and the database using Docker, creating an internal network to enable seamless communication between the services. Additionally, I would automate the tests I’ve written to run every time the Docker environment is brought up via Docker Compose.
 - I would improve and extend the test coverage, including tests for the newly implemented authentication systems. I would also add integration tests to validate the interaction between the newly developed LIS app and other components.
 
